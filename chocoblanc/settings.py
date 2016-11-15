@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'disqus',
+    'django.contrib.sites',
+
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+DISQUS_WEBSITE_SHORTNAME = 'yourshortname'
