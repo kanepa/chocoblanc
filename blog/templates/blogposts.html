@@ -6,7 +6,7 @@
         <div class="row">
             <hr>
             <div class="col-md-2 col-sm-3 text-center">
-                <a class="story-img" href="#">
+                 <a class="story-img" href="#">
                     <img src="http://placehold.it/100"
                          style="width:100px; height: 100px; background-color: #12ABB2; color:#FFFFFF;"
                          class="img-circle">
@@ -23,7 +23,7 @@
                         {% endif %}
                         <p>{{ post.content | linebreaks  }}</p>
                         <p>
-                            <button class="btn btn-default" onclick="location.href='/blog'">Back To Blog</button>
+                            <button class="btn btn-default" onclick="location.href= {{post.id}}">Read More</button>
                         </p>
                         <p>{{ post.published_date }} | <strong>Views</strong> {{ post.views }}
                         |<strong> Tag </strong>{{ post.tag }}</p>
