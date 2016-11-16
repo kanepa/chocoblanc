@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 1
 
 # Application definition
 
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'home',
     'accounts',
+    'django_forms_bootstrap',
 
 ]
 
@@ -131,3 +133,10 @@ STATICFILES_DIRS = (
 )
 
 DISQUS_WEBSITE_SHORTNAME = 'yourshortname'
+
+AUTH_USER_MODEL = 'accounts.User'
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailAuth',
+)
