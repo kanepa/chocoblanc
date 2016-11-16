@@ -7,7 +7,7 @@ from accounts.models import User
 
 class UserLoginForm(forms.Form):
     email = forms.EmailField()
-    passoword = forms.CharField(widget=forms.PasswordInput)
+    password = forms.CharField(widget=forms.PasswordInput)
 
 class UserRegistrationForm(UserCreationForm):
 
