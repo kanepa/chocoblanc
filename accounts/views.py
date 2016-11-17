@@ -15,7 +15,7 @@ def login(request):
     if request.method == 'POST':
         form = UserLoginForm(request.POST)
         if form.is_valid():
-            user = auth.authenticate(email=request.POST.get('email'),
+            user = auth.authenticate(username=request.POST.get('username_or_email'),
                                      password=request.POST.get('password'))
 
             if user is not None:
@@ -39,13 +39,14 @@ def logout(request):
     messages.success(request, 'You have successfully logged out')
     return redirect(reverse('index'))
 
+
 def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
         if form.is_valid():
             form.save()
 
-            user = auth.authenticate(email=request.POST.get('email'),
+            user = auth.authenticate(username=request.POST.get('username'),
                                      password=request.POST.get('password1'))
 
             if user:

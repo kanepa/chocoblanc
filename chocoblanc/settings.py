@@ -134,9 +134,8 @@ STATICFILES_DIRS = (
 
 DISQUS_WEBSITE_SHORTNAME = 'yourshortname'
 
-AUTH_USER_MODEL = 'accounts.User'
 
-AUTHENTICATION_BACKENDS = (
+AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'accounts.backends.EmailAuth',
-)
+    'accounts.backends.EmailAuth'
+]
