@@ -1,23 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Purchase</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for product in products %}
+  <div class="row" style="margin-top: 170px">
+
+
+        <div class="thumbnail">
+
+            <div class="caption">
+{#                <h4 class="pull-right">{{ product.price }}</h4>#}
+                <table class="table">
+{#        <thead>#}
+{#            <tr>#}
+{#                <th>Name</th>#}
+{#                <th>Description</th>#}
+{#                <th>Price</th>#}
+{#                <th>Purchase</th>#}
+{#            </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+                    {% for product in products %}
                 <tr>
-                    <td>{{ product.name }}</td>
-                    <td>{{ product.description }}</td>
-                    <td>${{ product.price }}</td>
-                    <td>{{ product.paypal_form.sandbox }}</td>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                <div class="caption">
+                    <img src="http://placehold.it/320x150" alt="">
+                    <h4 class="pull-right">${{ product.price }}</h4>
+                    <a href="#">{{ product.name }}</a>
+                    <p>{{ product.description }}</p>
+                    <a> {{ product.paypal_form.sandbox }}</a>
+
+
+                 </div>
+                </div>
                 </tr>
+
             {% endfor %}
-        </tbody>
+{#        </tbody>#}
     </table>
+   </div>
+</div>
+</div>
+
 {% endblock %}
