@@ -1,131 +1,16 @@
-.full {
-  background: url(http://placehold.it/1920x1080) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-
-body {
-    font-family: Arial;
-    padding-top: 50px;
-    padding-left: 75px;
-	/*margin-top: 50px;*/
-	/*margin-bottom: 50px;*/
-	/*background: none;*/
-}
-
-h2 a, h1 a, h1 {
-    color: #CFE5ED;
-    text-decoration: none;
-}
-
-.navbar-form input, .form-inline input {
+.jumbotron {
+  padding: 30px 15px;
     width: auto;
+
+  margin-top: 250px;
+  color: inherit;
+  background-color: rgb(117,60,69);
+    background-color: rgba(117, 60, 69, 0.3);
+  text-align: left;
+  background-size: cover;
+    img: float-right;
+  /*background-image: url("http://www.online-image-editor.com//styles/2014/images/example_image.png")*/
 }
 
-footer{
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #ededed;
-}
 
-#masthead {
-    padding-left: 10px;
-    min-height: 199px;
-}
-
-#masthead h1 {
-    font-size:230px;
-    line-height: 1;
-    margin-top: 50px;
-}
-
-#masthead .well {
-    margin-top: 31px;
-    min-height: 127px;
-}
-
-.navbar.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-#logo {
-    color: #12AB82;
-}
-
-.story-img{
-    margin-top:5%;
-    display: block;
-}
-
-a, a:hover {
-    color: #223344;
-    text-decoration: none;
-}
-
-.icon-bar {
-    background-color: #fff;
-}
-
-.dropdown-menu {
-    min-width: 250px;
-}
-
-.panel {
-    border-color: transparent;
-    border-radius: 0;
-}
-
-.thumbnail {
-    margin-bottom: 8px;
-}
-
-.img-container img {
-    min-width: 280px;
-    min-height: 180px;
-    max-width: 380px;
-    max-height: 280px;
-}
-
-.txt-container {
-    overflow: hidden;
-    height: 100px;
-}
-
-.panel .lead {
-    overflow: hidden;
-    height: 90px;
-}
-
-.label-float {
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    opacity: .9;
-    padding: 6px;
-    color: #fff;
-}
-
-@media screen and (min-width: 768px) {
-    #masthead h1 {
-        font-size: 50px;
-    }
-}
-
-/*#pics {*/
-    /*height: 50px;*/
-/*}*/
-
-.img-ranger {
-    min-width: 50px;
-    min-height: 50px;
-    max-width: 50px;
-    max-height: 50px;
-}

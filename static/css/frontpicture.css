@@ -11,3 +11,13 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+.jumbotron1 {
+  padding: 100px 15px;
+  margin-top: 200px;
+  color: inherit;
+  background: rgb(200, 54, 54) ;
+
+  text-align: center;
+  background-size: cover;
+  /*background-image: url("http://www.online-image-editor.com//styles/2014/images/example_image.png")*/
+}

@@ -2,6 +2,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%  load static  %}
+
+
+    <div class="jumbotron">
+  <div class="container">
+    <h1>Chocolat Blanc Insights</h1>
+    <img src="{% static 'images/logo.jpg' %}">
+    <p></p>
+  </div>
+</div>
 
     {% for post in posts %}
         <div class="row">
@@ -20,7 +30,7 @@
                 <div class="row">
                     <div class="col-xs-9">
                         {% if post.image %}
-                            <img id="pics" src="/media/{{ post.image }}">
+                            <img src="/media/{{ post.image }}" style="width: 500px;height:500px;border-color:#CFE5ED; ">
                         {% endif %}
                         <p>{{ post.content | linebreaks  }}</p>
                         <p>
